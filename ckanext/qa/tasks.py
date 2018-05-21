@@ -10,16 +10,34 @@ import urlparse
 import routes
 
 from ckan.common import _
-from ckan.lib import celery_app
 from ckan.lib import i18n
 from ckan.plugins import toolkit
 import ckan.lib.helpers as ckan_helpers
 from ckanext.qa.sniff_format import sniff_file_format
 from ckanext.qa import lib
 from ckanext.archiver.model import Archival, Status
-from celery.utils.log import get_task_logger
 
-log = get_task_logger(__name__)
+try:
+    from celery.utils.log import get_task_logger
+    log = get_task_logger(__name__)
+except ImportError:
+    from logging import getLogger
+    log = getLogger(__name__)
+
+
+try:
+    from ckan.lib import celery_app
+    celery_task = celery_app.celery.task
+except ImportError:
+    class celery_task:
+        """NOOP decorator
+        """
+        def __init__(self, *args, **kwargs):
+            pass
+        
+        def __call__(self, m):
+            # pass through
+            return m
 
 
 class QAError(Exception):
@@ -88,7 +106,7 @@ def load_translations(lang):
     # pull out translator and register it
     registry.register(translator, fakepylons.translator)
 
-@celery_app.celery.task(name="qa.update_package")
+@celery_task(name="qa.update_package")
 def update_package(ckan_ini_filepath, package_id):
     """
     Given a package, calculates an openness score for each of its resources.
@@ -128,7 +146,7 @@ def update_package_(package_id, log):
     _update_search_index(package.id, log)
 
 
-@celery_app.celery.task(name="qa.update")
+@celery_task(name="qa.update")
 def update(ckan_ini_filepath, resource_id):
     """
     Given a resource, calculates an openness score.
