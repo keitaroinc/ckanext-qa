@@ -24,12 +24,12 @@ class QAError(Exception):
 
 # Description of each score, used elsewhere
 OPENNESS_SCORE_DESCRIPTION = {
-    0: 'Not obtainable or license is not open',
-    1: 'Obtainable and open license',
-    2: 'Machine readable format',
-    3: 'Open and standardized format',
-    4: 'Ontologically represented',
-    5: 'Fully Linked Open Data as appropriate',
+    0: _('Not obtainable or license is not open'),
+    1: _('Obtainable and open license'),
+    2: _('Machine readable format'),
+    3: _('Open and standardized format'),
+    4: _('Ontologically represented'),
+    5: _('Fully Linked Open Data as appropriate'),
 }
 
 
