@@ -1,21 +1,21 @@
 # Translations template for ckanext-qa.
-# Copyright (C) 2017 ORGANIZATION
+# Copyright (C) 2018 ORGANIZATION
 # This file is distributed under the same license as the ckanext-qa project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-qa 2.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-17 13:32+0100\n"
+"POT-Creation-Date: 2018-05-30 19:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
+"Generated-By: Babel 2.3.4\n"
 
 #: ckanext/qa/reports.py:164
 msgid "Openness (Five Stars)"
@@ -26,6 +26,30 @@ msgid ""
 "Datasets graded on Tim Berners Lees' Five Stars of Openness - openly "
 "licensed, openly accessible, structured, open format, URIs for entities, "
 "linked."
+msgstr ""
+
+#: ckanext/qa/tasks.py:27
+msgid "Not obtainable or license is not open"
+msgstr ""
+
+#: ckanext/qa/tasks.py:28
+msgid "Obtainable and open license"
+msgstr ""
+
+#: ckanext/qa/tasks.py:29
+msgid "Machine readable format"
+msgstr ""
+
+#: ckanext/qa/tasks.py:30
+msgid "Open and standardized format"
+msgstr ""
+
+#: ckanext/qa/tasks.py:31
+msgid "Ontologically represented"
+msgstr ""
+
+#: ckanext/qa/tasks.py:32
+msgid "Fully Linked Open Data as appropriate"
 msgstr ""
 
 #: ckanext/qa/tasks.py:219
@@ -43,6 +67,13 @@ msgstr ""
 
 #: ckanext/qa/tasks.py:267
 msgid "File could not be downloaded."
+msgstr ""
+
+#: ckanext/qa/tasks.py:268 ckanext/qa/tasks.py:341 ckanext/qa/tasks.py:346
+#: ckanext/qa/templates/qa/openness_stars.html:24
+#: ckanext/qa/templates/qa/openness_stars_brief.html:23
+#: ckanext/qa/templates/report/openness.html:88
+msgid "Reason"
 msgstr ""
 
 #: ckanext/qa/tasks.py:269
@@ -202,6 +233,11 @@ msgstr ""
 msgid "Score"
 msgstr ""
 
+#: ckanext/qa/templates/report/openness.html:28
+#: ckanext/qa/templates/report/openness.html:85
+msgid "Organization"
+msgstr ""
+
 #: ckanext/qa/templates/report/openness.html:33
 #: ckanext/qa/templates/report/openness.html:56
 msgid "Total stars"
@@ -211,3 +247,12 @@ msgstr ""
 #: ckanext/qa/templates/report/openness.html:55
 msgid "Average score"
 msgstr ""
+
+#: ckanext/qa/templates/report/openness.html:82
+msgid "Dataset"
+msgstr ""
+
+#: ckanext/qa/templates/report/openness.html:83
+msgid "Notes"
+msgstr ""
+
