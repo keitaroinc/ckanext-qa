@@ -3,6 +3,7 @@ import types
 
 import ckan.model as model
 import ckan.plugins as p
+from ckan.lib.plugins import DefaultTranslation
 
 from ckanext.archiver.interfaces import IPipe
 from ckanext.qa.logic import action, auth
@@ -15,7 +16,8 @@ from ckanext.report.interfaces import IReport
 log = logging.getLogger(__name__)
 
 
-class QAPlugin(p.SingletonPlugin, p.toolkit.DefaultDatasetForm):
+class QAPlugin(p.SingletonPlugin, p.toolkit.DefaultDatasetForm,
+               DefaultTranslation):
     p.implements(p.IConfigurer, inherit=True)
     p.implements(p.IRoutes, inherit=True)
     p.implements(IPipe, inherit=True)
@@ -24,6 +26,7 @@ class QAPlugin(p.SingletonPlugin, p.toolkit.DefaultDatasetForm):
     p.implements(p.IAuthFunctions)
     p.implements(p.ITemplateHelpers)
     p.implements(p.IPackageController, inherit=True)
+    p.implements(p.ITranslation)
 
     # IConfigurer
 
