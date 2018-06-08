@@ -18,13 +18,37 @@ OR the package_show's package['qa'] e.g.
 "updated": "2015-11-19T16:54:49.480393",
 
 #}
-<div class="qa openness-{{ openness_score }}">
-  {% if openness_score != None %}
-    {% trans %}Openness{% endtrans %}: {% snippet "qa/stars.html", stars=openness_score %} <br/>
-    {% trans %}Reason{% endtrans %}: {{ openness_score_reason }} <br/>
-  <span>{% trans %}Checked{% endtrans %}: {{ h.render_datetime(updated) }}</span><br/>
-  {% else %}
-    {% trans %}No openness information yet.{% endtrans %}
-  {% endif %}
+<div class="qa">
+  <div class="module-content">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        {% if openness_score != None %}
+        <div class="openness-{{ openness_score }} pull-right">
+          {% snippet "qa/stars.html", stars=openness_score %}
+        </div>
+        {% endif %}
+        <h3 class="panel-title">
+          <span class="fa fa-eye"></span> {% trans %}Openness{% endtrans %}</h3>
+      </div>
+      {% if openness_score != None %}
+      <div class="panel-body">
+        <dl>
+          <dt>{% trans %}Reason{% endtrans %}</dt>
+          <dd>{{ openness_score_reason }}</dd>
+        </dl>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span>{% trans %}Checked{% endtrans %}: {{ h.render_datetime(updated) }}</span>
+        </li>
+      </ul>
+      {% else %}
+      <ul class="list-group">
+        <li class="list-group-item text-muted">
+          {% trans %}No openness information yet.{% endtrans %}
+        </li>
+      </ul>
+      {% endif %}
+    </div>
+  </div>
 </div>
-
