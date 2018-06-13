@@ -1,0 +1,11 @@
+.qa .panel {
+  margin-bottom: 0;
+}
+
+.qa .module-content {
+  padding-bottom: 0;
+}
+
+.qa dt:after{
+  content: ':'
+}

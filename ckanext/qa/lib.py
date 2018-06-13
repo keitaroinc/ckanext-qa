@@ -6,13 +6,33 @@ import logging
 from pylons import config
 
 from ckan import plugins as p
-from ckan.lib.celery_app import celery
+#from ckan.lib.celery_app import celery
+
 from ckan.model.types import make_uuid
 
 
 log = logging.getLogger(__name__)
 
 _RESOURCE_FORMAT_SCORES = None
+
+
+def _schedule_task_celery(name, args, queue, task_id):
+    from ckan.lib.celery_app import celery
+    celery.send_task(name, args=args, task_id=task_id, queue=queue)
+
+
+def _schedule_task_job_system(fn, args, queue):
+    import ckan.lib.jobs as jobs
+    jobs.enqueue(fn, args=args, queue=queue)
+
+
+try:
+    # try to use the old-style job system that uses celery
+    from ckan.lib.celery_app import celery
+    schedule_task = lambda fn, name, args, queue, task_id: _schedule_task_celery(name, args, task_id, queue)
+except ImportError:
+    # Use the new jobs system
+    schedule_task = lambda fn, name, args, queue, task_id: _schedule_task_job_system(fn, args, queue)
 
 
 def resource_format_scores():
@@ -74,23 +94,29 @@ def munge_format_to_be_canonical(format_name):
 
 def create_qa_update_package_task(package, queue):
     from pylons import config
+    from ckanext.qa.tasks import update_package
     task_id = '%s-%s' % (package.name, make_uuid()[:4])
     ckan_ini_filepath = os.path.abspath(config.__file__)
-    celery.send_task('qa.update_package', args=[ckan_ini_filepath, package.id],
-                     task_id=task_id, queue=queue)
+    # celery.send_task('qa.update_package', args=[ckan_ini_filepath, package.id],
+    #                  task_id=task_id, queue=queue)
+    schedule_task(fn=update_package, name='qa.update_package', args=[ckan_ini_filepath, package.id],
+                  task_id=task_id, queue=queue)
     log.debug('QA of package put into celery queue %s: %s',
               queue, package.name)
 
 
 def create_qa_update_task(resource, queue):
     from pylons import config
+    from ckanext.qa.tasks import update
     if p.toolkit.check_ckan_version(max_version='2.2.99'):
         package = resource.resource_group.package
     else:
         package = resource.package
     task_id = '%s/%s/%s' % (package.name, resource.id[:4], make_uuid()[:4])
     ckan_ini_filepath = os.path.abspath(config.__file__)
-    celery.send_task('qa.update', args=[ckan_ini_filepath, resource.id],
-                     task_id=task_id, queue=queue)
+    # celery.send_task('qa.update', args=[ckan_ini_filepath, resource.id],
+    #                  task_id=task_id, queue=queue)
+    schedule_task(fn=update, name='qa.update', args=[ckan_ini_filepath, resource.id],
+                  task_id=task_id, queue=queue)
     log.debug('QA of resource put into celery queue %s: %s/%s url=%r',
               queue, package.name, resource.id, resource.url)

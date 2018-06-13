@@ -10,13 +10,34 @@ import urlparse
 import routes
 
 from ckan.common import _
-from ckan.lib import celery_app
 from ckan.lib import i18n
 from ckan.plugins import toolkit
 import ckan.lib.helpers as ckan_helpers
 from ckanext.qa.sniff_format import sniff_file_format
 from ckanext.qa import lib
 from ckanext.archiver.model import Archival, Status
+
+try:
+    from celery.utils.log import get_task_logger
+    log = get_task_logger(__name__)
+except ImportError:
+    from logging import getLogger
+    log = getLogger(__name__)
+
+
+try:
+    from ckan.lib import celery_app
+    celery_task = celery_app.celery.task
+except ImportError:
+    class celery_task:
+        """NOOP decorator
+        """
+        def __init__(self, *args, **kwargs):
+            pass
+        
+        def __call__(self, m):
+            # pass through
+            return m
 
 
 class QAError(Exception):
@@ -32,6 +53,19 @@ OPENNESS_SCORE_DESCRIPTION = {
     5: _('Fully Linked Open Data as appropriate'),
 }
 
+
+def register_translator():
+    # Register a translator in this thread so that
+    # the _() functions in logic layer can work
+    from paste.registry import Registry
+    from pylons import translator
+    from ckan.lib.cli import MockTranslator
+    global registry
+    registry = Registry()
+    registry.prepare()
+    global translator_obj
+    translator_obj = MockTranslator()
+    registry.register(translator, translator_obj)
 
 def load_config(ckan_ini_filepath):
     import paste.deploy
@@ -72,7 +106,7 @@ def load_translations(lang):
     # pull out translator and register it
     registry.register(translator, fakepylons.translator)
 
-@celery_app.celery.task(name="qa.update_package")
+@celery_task(name="qa.update_package")
 def update_package(ckan_ini_filepath, package_id):
     """
     Given a package, calculates an openness score for each of its resources.
@@ -80,7 +114,7 @@ def update_package(ckan_ini_filepath, package_id):
 
     Returns None
     """
-    log = update_package.get_logger()
+
     load_config(ckan_ini_filepath)
 
     try:
@@ -112,7 +146,7 @@ def update_package_(package_id, log):
     _update_search_index(package.id, log)
 
 
-@celery_app.celery.task(name="qa.update")
+@celery_task(name="qa.update")
 def update(ckan_ini_filepath, resource_id):
     """
     Given a resource, calculates an openness score.
@@ -122,7 +156,6 @@ def update(ckan_ini_filepath, resource_id):
         'openness_score': score (int)
         'openness_score_reason': the reason for the score (string)
     """
-    log = update.get_logger()
     load_config(ckan_ini_filepath)
     try:
         update_resource_(resource_id, log)
@@ -195,6 +228,8 @@ def resource_score(resource, log):
     score = 0
     score_reason = ''
     format_ = None
+
+    register_translator()
 
     try:
         score_reasons = []  # a list of strings detailing how we scored it
