@@ -8,19 +8,20 @@ msgstr ""
 "Project-Id-Version: ckanext-qa 2.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-05-30 19:41+0200\n"
-"PO-Revision-Date: 2018-05-30 18:56+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2018-06-09 00:37+0200\n"
 "Language: mk\n"
 "Language-Team: mk <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ckanext/qa/reports.py:164
 msgid "Openness (Five Stars)"
-msgstr ""
+msgstr "Отвореност (Пет ѕвезди)"
 
 #: ckanext/qa/reports.py:165
 msgid ""
@@ -28,91 +29,94 @@ msgid ""
 "licensed, openly accessible, structured, open format, URIs for entities, "
 "linked."
 msgstr ""
+"Податочни сетови оценети според \"Пет ѕвезди на отвореност\" од Тим "
+"Бернерс Лиз - отворено лиценцирани, отворено достапни, структурирани, во "
+"отворен формат, URI за ентитети, поврзани."
 
 #: ckanext/qa/tasks.py:27
 msgid "Not obtainable or license is not open"
-msgstr ""
+msgstr "Недостапно или лиценцата не е отворена"
 
 #: ckanext/qa/tasks.py:28
 msgid "Obtainable and open license"
-msgstr ""
+msgstr "Достапно и со отворена лиценца"
 
 #: ckanext/qa/tasks.py:29
 msgid "Machine readable format"
-msgstr ""
+msgstr "Машински читлив формат"
 
 #: ckanext/qa/tasks.py:30
 msgid "Open and standardized format"
-msgstr ""
+msgstr "Отворен и стандардизиран формат"
 
 #: ckanext/qa/tasks.py:31
 msgid "Ontologically represented"
-msgstr ""
+msgstr "Онтолошки претставено"
 
 #: ckanext/qa/tasks.py:32
 msgid "Fully Linked Open Data as appropriate"
-msgstr ""
+msgstr "Целосно поврзани отворени податоци, како што е соодветно"
 
 #: ckanext/qa/tasks.py:219
 msgid "Could not understand the file format, therefore score is 1."
-msgstr ""
+msgstr "Форматот не може да биде разбран, затоа оцената е 1."
 
 #: ckanext/qa/tasks.py:228
 #, python-format
 msgid "Unknown error: %s"
-msgstr ""
+msgstr "Непозната грешка: %s"
 
 #: ckanext/qa/tasks.py:242
 msgid "License not open"
-msgstr ""
+msgstr "Лиценцата не е отворена"
 
 #: ckanext/qa/tasks.py:267
 msgid "File could not be downloaded."
-msgstr ""
+msgstr "Датотеката не може да се преземе."
 
 #: ckanext/qa/tasks.py:268 ckanext/qa/tasks.py:341 ckanext/qa/tasks.py:346
 #: ckanext/qa/templates/qa/openness_stars.html:24
 #: ckanext/qa/templates/qa/openness_stars_brief.html:23
 #: ckanext/qa/templates/report/openness.html:88
 msgid "Reason"
-msgstr ""
+msgstr "Причина"
 
 #: ckanext/qa/tasks.py:269
 #, python-format
 msgid "Error details: %s."
-msgstr ""
+msgstr "Детали за грешката: %s."
 
 #: ckanext/qa/tasks.py:270
 #, python-format
 msgid "Attempted on %s."
-msgstr ""
+msgstr "Обид на: %s."
 
 #: ckanext/qa/tasks.py:274 ckanext/qa/tasks.py:282
 #, python-format
 msgid "This URL last worked on: %s."
-msgstr ""
+msgstr "Овој УРЛ последен пат работел на: % s."
 
 #: ckanext/qa/tasks.py:276
 msgid "This was the first attempt."
-msgstr ""
+msgstr "Ова беше првиот обид."
 
 #: ckanext/qa/tasks.py:278
 #, python-format
 msgid "Tried %s times since %s."
-msgstr ""
+msgstr "Се обиде %s пати од %s."
 
 #: ckanext/qa/tasks.py:284
 msgid "This URL has not worked in the history of this tool."
-msgstr ""
+msgstr "Овој УРЛ не работел во историјата на оваа алатка."
 
 #: ckanext/qa/tasks.py:319 ckanext/qa/tasks.py:349
 msgid "This file had not been downloaded at the time of scoring it."
-msgstr ""
+msgstr "Оваа датотека не била преземена во моментот на бодување."
 
 #: ckanext/qa/tasks.py:324
 #, python-format
 msgid "Cache filepath does not exist: \"%s\"."
-msgstr ""
+msgstr "Патот на датотеката за кеш не постои: \"%s\"."
 
 #: ckanext/qa/tasks.py:332
 #, python-format
@@ -120,140 +124,145 @@ msgid ""
 "Content of file appeared to be format \"%s\" which receives openness "
 "score: %s."
 msgstr ""
+"Се чини дека содржината на датотеката е формат \"%s\" кој добива резултат "
+"на отвореност: %s."
 
 #: ckanext/qa/tasks.py:335
 msgid "The format of the file was not recognized from its contents."
-msgstr ""
+msgstr "Форматот на датотеката не беше препознаен од неговата содржина."
 
 #: ckanext/qa/tasks.py:340
 msgid "File was not downloaded deliberately"
-msgstr ""
+msgstr "Датотеката не беше преземена намерно"
 
 #: ckanext/qa/tasks.py:341 ckanext/qa/tasks.py:346
 msgid "Using other methods to determine file openness."
-msgstr ""
+msgstr "Користење на други методи за да се утврди отвореноста на датотеката."
 
 #: ckanext/qa/tasks.py:345
 msgid "A system error occurred during downloading this file"
-msgstr ""
+msgstr "Се случи системска грешка за време на преземањето на оваа датотека"
 
 #: ckanext/qa/tasks.py:366
 msgid "Could not determine a file extension in the URL."
-msgstr ""
+msgstr "Не можеше да се одреди екстензија на датотеката во УРЛ-то."
 
 #: ckanext/qa/tasks.py:373
 #, python-format
 msgid "URL extension \"%s\" relates to format \"%s\" and receives score: %s."
 msgstr ""
+"УРЛ екстензијата \"%s\" се однесува на форматот \"%s\" и добива оцена: %s."
 
 #: ckanext/qa/tasks.py:377
 #, python-format
 msgid ""
-"URL extension \"%s\" relates to format \"%s\" but a score for that format"
-" is not configured, so giving it default score %s."
+"URL extension \"%s\" relates to format \"%s\" but a score for that format "
+"is not configured, so giving it default score %s."
 msgstr ""
+"УРЛ екстензија \"%s\" се однесува на форматот \"%s\" но оцена за овој "
+"формат не е конфигурирана, па дава стандардна оцена %s."
 
 #: ckanext/qa/tasks.py:379
 #, python-format
 msgid "URL extension \"%s\" is an unknown format."
-msgstr ""
+msgstr "УРЛ екстензијата \"%s\"е во непознат формат."
 
 #: ckanext/qa/tasks.py:415
 msgid "Format field is blank."
-msgstr ""
+msgstr "Формат полето е празно."
 
 #: ckanext/qa/tasks.py:420
 #, python-format
 msgid "Format field \"%s\" does not correspond to a known format."
-msgstr ""
+msgstr "Формат полето \"%s\" не одговара на познат формат."
 
 #: ckanext/qa/tasks.py:423
 #, python-format
 msgid "Format field \"%s\" receives score: %s."
-msgstr ""
+msgstr "Формат полето \"%s\" добива оцена: %s."
 
 #: ckanext/qa/templates/qa/openness_stars.html:23
 #: ckanext/qa/templates/snippets/organization.html:9
 msgid "Openness"
-msgstr ""
+msgstr "Отвореност"
 
 #: ckanext/qa/templates/qa/openness_stars.html:25
 #: ckanext/qa/templates/qa/openness_stars_brief.html:23
 msgid "Checked"
-msgstr ""
+msgstr "Проверено"
 
 #: ckanext/qa/templates/qa/openness_stars.html:27
 #: ckanext/qa/templates/qa/openness_stars_brief.html:26
 msgid "No openness information yet."
-msgstr ""
+msgstr "Сè уште нема информации за отвореност."
 
 #: ckanext/qa/templates/qa/stars.html:24
 msgid "{0} out of {1}"
-msgstr ""
+msgstr "{0} од {1}"
 
 #: ckanext/qa/templates/qa/stars_explained.html:7
 msgid "Linked data - data URIs and linked to other data (e.g. RDF)"
 msgstr ""
+"Поврзани податоци - URI на податоци и поврзани со други податоци (пр. RDF)"
 
 #: ckanext/qa/templates/qa/stars_explained.html:9
 msgid "Linkable data - served at URIs (e.g. RDF)"
-msgstr ""
+msgstr "Податоци со можноста за поврзување - служени на URI (пр. RDF)"
 
 #: ckanext/qa/templates/qa/stars_explained.html:11
 msgid "Structured data in open format (e.g. CSV)"
-msgstr ""
+msgstr "Структурирани податоци во отворен формат (пр. CSV)"
 
 #: ckanext/qa/templates/qa/stars_explained.html:13
 msgid "Structured data but proprietry format (e.g. Excel)"
-msgstr ""
+msgstr "Структурирани податоци но во формат на сопственост (пр. Excel)"
 
 #: ckanext/qa/templates/qa/stars_explained.html:15
 msgid "Unstructured data (e.g. PDF)"
-msgstr ""
+msgstr "Неструктурирани податоци (пр. PDF)"
 
 #: ckanext/qa/templates/report/openness.html:3
 #: ckanext/qa/templates/report/openness.html:57
 msgid "Datasets given a score"
-msgstr ""
+msgstr "Податочни сетови со дадена оцена"
 
 #: ckanext/qa/templates/report/openness.html:4
 #: ckanext/qa/templates/report/openness.html:58
 msgid "Score frequencies"
-msgstr ""
+msgstr "Фреквенција на резултати"
 
 #: ckanext/qa/templates/report/openness.html:8
 #: ckanext/qa/templates/report/openness.html:29
 #: ckanext/qa/templates/report/openness.html:62
 msgid "Score TBC"
-msgstr ""
+msgstr "Оцена TBC"
 
 #: ckanext/qa/templates/report/openness.html:10
 #: ckanext/qa/templates/report/openness.html:31
 #: ckanext/qa/templates/report/openness.html:64
 #: ckanext/qa/templates/report/openness.html:87
 msgid "Score"
-msgstr ""
+msgstr "Оцена"
 
 #: ckanext/qa/templates/report/openness.html:28
 #: ckanext/qa/templates/report/openness.html:85
 msgid "Organization"
-msgstr ""
+msgstr "Организација"
 
 #: ckanext/qa/templates/report/openness.html:33
 #: ckanext/qa/templates/report/openness.html:56
 msgid "Total stars"
-msgstr ""
+msgstr "Вкупно ѕвезди"
 
 #: ckanext/qa/templates/report/openness.html:34
 #: ckanext/qa/templates/report/openness.html:55
 msgid "Average score"
-msgstr ""
+msgstr "Просечна оцена"
 
 #: ckanext/qa/templates/report/openness.html:82
 msgid "Dataset"
-msgstr ""
+msgstr "Податочен сет"
 
 #: ckanext/qa/templates/report/openness.html:83
 msgid "Notes"
-msgstr ""
-
+msgstr "Белешки"
