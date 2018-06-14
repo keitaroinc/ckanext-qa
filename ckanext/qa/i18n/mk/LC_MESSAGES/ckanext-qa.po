@@ -43,7 +43,7 @@ msgstr "Достапно и со отворена лиценца"
 
 #: ckanext/qa/tasks.py:29
 msgid "Machine readable format"
-msgstr "Машински читлив формат"
+msgstr "Машински-читлив формат"
 
 #: ckanext/qa/tasks.py:30
 msgid "Open and standardized format"
@@ -59,7 +59,7 @@ msgstr "Целосно поврзани отворени податоци, ка�
 
 #: ckanext/qa/tasks.py:219
 msgid "Could not understand the file format, therefore score is 1."
-msgstr "Форматот не може да биде разбран, затоа оцената е 1."
+msgstr "Форматот не може да биде разбран, затоа оценката е 1."
 
 #: ckanext/qa/tasks.py:228
 #, python-format
@@ -94,7 +94,7 @@ msgstr "Обид на: %s."
 #: ckanext/qa/tasks.py:274 ckanext/qa/tasks.py:282
 #, python-format
 msgid "This URL last worked on: %s."
-msgstr "Овој УРЛ последен пат работел на: % s."
+msgstr "Овој URL последен пат работел на: % s."
 
 #: ckanext/qa/tasks.py:276
 msgid "This was the first attempt."
@@ -107,7 +107,7 @@ msgstr "Се обиде %s пати од %s."
 
 #: ckanext/qa/tasks.py:284
 msgid "This URL has not worked in the history of this tool."
-msgstr "Овој УРЛ не работел во историјата на оваа алатка."
+msgstr "Овој URL не работел во историјата на оваа алатка."
 
 #: ckanext/qa/tasks.py:319 ckanext/qa/tasks.py:349
 msgid "This file had not been downloaded at the time of scoring it."
@@ -137,7 +137,7 @@ msgstr "Датотеката не беше преземена намерно"
 
 #: ckanext/qa/tasks.py:341 ckanext/qa/tasks.py:346
 msgid "Using other methods to determine file openness."
-msgstr "Користење на други методи за да се утврди отвореноста на датотеката."
+msgstr "Се користат други методи за да се утврди отвореноста на датотеката."
 
 #: ckanext/qa/tasks.py:345
 msgid "A system error occurred during downloading this file"
@@ -145,13 +145,13 @@ msgstr "Се случи системска грешка за време на п�
 
 #: ckanext/qa/tasks.py:366
 msgid "Could not determine a file extension in the URL."
-msgstr "Не можеше да се одреди екстензија на датотеката во УРЛ-то."
+msgstr "Не можеше да се одреди екстензија на датотеката во URL"
 
 #: ckanext/qa/tasks.py:373
 #, python-format
 msgid "URL extension \"%s\" relates to format \"%s\" and receives score: %s."
 msgstr ""
-"УРЛ екстензијата \"%s\" се однесува на форматот \"%s\" и добива оцена: %s."
+"Екстензијата за URL \"%s\" се однесува на форматот \"%s\" и добива оцена: %s."
 
 #: ckanext/qa/tasks.py:377
 #, python-format
@@ -159,13 +159,13 @@ msgid ""
 "URL extension \"%s\" relates to format \"%s\" but a score for that format "
 "is not configured, so giving it default score %s."
 msgstr ""
-"УРЛ екстензија \"%s\" се однесува на форматот \"%s\" но оцена за овој "
+"Екстензијата за URL \"%s\" се однесува на форматот \"%s\" но оцена за овој "
 "формат не е конфигурирана, па дава стандардна оцена %s."
 
 #: ckanext/qa/tasks.py:379
 #, python-format
 msgid "URL extension \"%s\" is an unknown format."
-msgstr "УРЛ екстензијата \"%s\"е во непознат формат."
+msgstr "Екстензијата за URL \"%s\" е во непознат формат."
 
 #: ckanext/qa/tasks.py:415
 msgid "Format field is blank."
