@@ -9,3 +9,7 @@
 .qa dt:after{
   content: ':'
 }
+
+.modal-evaluation .fa-star{
+  color: #ffa500;
+}

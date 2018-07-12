@@ -18,6 +18,9 @@ OR the package_show's package['qa'] e.g.
 "updated": "2015-11-19T16:54:49.480393",
 
 #}
+
+{% resource 'qa/javascript/modules/openness-info.js' %}
+
 <div class="qa">
   <div class="module-content">
     <div class="panel panel-default">
@@ -32,6 +35,14 @@ OR the package_show's package['qa'] e.g.
       </div>
       {% if openness_score != None %}
       <div class="panel-body">
+        <button data-module="openness-info"
+          data-module-description="{{ _('An assessment of the level of openness of the data set is granted on the basis of the open government data model, determined through a 5-star system, created by Web founder Tim Berners Lee. The 5-star system is as follows:') }}"
+          data-module-one_star="{{ _('data on the web regardless of the format, using an open license')}}"
+          data-module-two_stars="{{ _('data in a structural format (such as, for example, Excel) data in a structured, open format (eg. CSV instead of Excel)')}}"
+          data-module-three_stars="{{ _('data in a structured, open format (eg. CSV instead of Excel)')}}"
+          data-module-four_stars="{{ _('using unique URLs to connect data sets')}}"
+          data-module-five_stars="{{ _('linking data with other data for recontext')}}"
+          class="btn btn-sm btn-default pull-right"><span class="fa fa-info-circle"></span> {{ _('Evaluation')}}</button>
         <dl>
           <dt>{% trans %}Reason{% endtrans %}</dt>
           <dd>{{ openness_score_reason }}</dd>
