@@ -34,7 +34,7 @@ except ImportError:
         """
         def __init__(self, *args, **kwargs):
             pass
-        
+
         def __call__(self, m):
             # pass through
             return m
@@ -42,16 +42,6 @@ except ImportError:
 
 class QAError(Exception):
     pass
-
-# Description of each score, used elsewhere
-OPENNESS_SCORE_DESCRIPTION = {
-    0: _('Not obtainable or license is not open'),
-    1: _('Obtainable and open license'),
-    2: _('Machine readable format'),
-    3: _('Open and standardized format'),
-    4: _('Ontologically represented'),
-    5: _('Fully Linked Open Data as appropriate'),
-}
 
 
 def register_translator():
@@ -66,6 +56,19 @@ def register_translator():
     global translator_obj
     translator_obj = MockTranslator()
     registry.register(translator, translator_obj)
+
+register_translator()
+
+# Description of each score, used elsewhere
+OPENNESS_SCORE_DESCRIPTION = {
+    0: _('Not obtainable or license is not open'),
+    1: _('Obtainable and open license'),
+    2: _('Machine readable format'),
+    3: _('Open and standardized format'),
+    4: _('Ontologically represented'),
+    5: _('Fully Linked Open Data as appropriate'),
+}
+
 
 def load_config(ckan_ini_filepath):
     import paste.deploy
