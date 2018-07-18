@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-qa 2.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-07-12 11:37+0200\n"
+"POT-Creation-Date: 2018-07-18 17:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,145 +28,145 @@ msgid ""
 "linked."
 msgstr ""
 
-#: ckanext/qa/tasks.py:48
+#: ckanext/qa/tasks.py:64
 msgid "Not obtainable or license is not open"
 msgstr ""
 
-#: ckanext/qa/tasks.py:49
+#: ckanext/qa/tasks.py:65
 msgid "Obtainable and open license"
 msgstr ""
 
-#: ckanext/qa/tasks.py:50
+#: ckanext/qa/tasks.py:66
 msgid "Machine readable format"
 msgstr ""
 
-#: ckanext/qa/tasks.py:51
+#: ckanext/qa/tasks.py:67
 msgid "Open and standardized format"
 msgstr ""
 
-#: ckanext/qa/tasks.py:52
+#: ckanext/qa/tasks.py:68
 msgid "Ontologically represented"
 msgstr ""
 
-#: ckanext/qa/tasks.py:53
+#: ckanext/qa/tasks.py:69
 msgid "Fully Linked Open Data as appropriate"
 msgstr ""
 
-#: ckanext/qa/tasks.py:254
+#: ckanext/qa/tasks.py:257
 msgid "Could not understand the file format, therefore score is 1."
 msgstr ""
 
-#: ckanext/qa/tasks.py:263
+#: ckanext/qa/tasks.py:266
 #, python-format
 msgid "Unknown error: %s"
 msgstr ""
 
-#: ckanext/qa/tasks.py:277
+#: ckanext/qa/tasks.py:280
 msgid "License not open"
 msgstr ""
 
-#: ckanext/qa/tasks.py:302
+#: ckanext/qa/tasks.py:305
 msgid "File could not be downloaded."
 msgstr ""
 
-#: ckanext/qa/tasks.py:303 ckanext/qa/tasks.py:376 ckanext/qa/tasks.py:381
+#: ckanext/qa/tasks.py:306 ckanext/qa/tasks.py:379 ckanext/qa/tasks.py:384
 #: ckanext/qa/templates/qa/openness_stars.html:47
 #: ckanext/qa/templates/qa/openness_stars_brief.html:23
 #: ckanext/qa/templates/report/openness.html:88
 msgid "Reason"
 msgstr ""
 
-#: ckanext/qa/tasks.py:304
+#: ckanext/qa/tasks.py:307
 #, python-format
 msgid "Error details: %s."
 msgstr ""
 
-#: ckanext/qa/tasks.py:305
+#: ckanext/qa/tasks.py:308
 #, python-format
 msgid "Attempted on %s."
 msgstr ""
 
-#: ckanext/qa/tasks.py:309 ckanext/qa/tasks.py:317
+#: ckanext/qa/tasks.py:312 ckanext/qa/tasks.py:320
 #, python-format
 msgid "This URL last worked on: %s."
 msgstr ""
 
-#: ckanext/qa/tasks.py:311
+#: ckanext/qa/tasks.py:314
 msgid "This was the first attempt."
 msgstr ""
 
-#: ckanext/qa/tasks.py:313
+#: ckanext/qa/tasks.py:316
 #, python-format
 msgid "Tried %s times since %s."
 msgstr ""
 
-#: ckanext/qa/tasks.py:319
+#: ckanext/qa/tasks.py:322
 msgid "This URL has not worked in the history of this tool."
 msgstr ""
 
-#: ckanext/qa/tasks.py:354 ckanext/qa/tasks.py:384
+#: ckanext/qa/tasks.py:357 ckanext/qa/tasks.py:387
 msgid "This file had not been downloaded at the time of scoring it."
 msgstr ""
 
-#: ckanext/qa/tasks.py:359
+#: ckanext/qa/tasks.py:362
 #, python-format
 msgid "Cache filepath does not exist: \"%s\"."
 msgstr ""
 
-#: ckanext/qa/tasks.py:367
+#: ckanext/qa/tasks.py:370
 #, python-format
 msgid ""
 "Content of file appeared to be format \"%s\" which receives openness score: "
 "%s."
 msgstr ""
 
-#: ckanext/qa/tasks.py:370
+#: ckanext/qa/tasks.py:373
 msgid "The format of the file was not recognized from its contents."
 msgstr ""
 
-#: ckanext/qa/tasks.py:375
+#: ckanext/qa/tasks.py:378
 msgid "File was not downloaded deliberately"
 msgstr ""
 
-#: ckanext/qa/tasks.py:376 ckanext/qa/tasks.py:381
+#: ckanext/qa/tasks.py:379 ckanext/qa/tasks.py:384
 msgid "Using other methods to determine file openness."
 msgstr ""
 
-#: ckanext/qa/tasks.py:380
+#: ckanext/qa/tasks.py:383
 msgid "A system error occurred during downloading this file"
 msgstr ""
 
-#: ckanext/qa/tasks.py:401
+#: ckanext/qa/tasks.py:404
 msgid "Could not determine a file extension in the URL."
 msgstr ""
 
-#: ckanext/qa/tasks.py:408
+#: ckanext/qa/tasks.py:411
 #, python-format
 msgid "URL extension \"%s\" relates to format \"%s\" and receives score: %s."
 msgstr ""
 
-#: ckanext/qa/tasks.py:412
+#: ckanext/qa/tasks.py:415
 #, python-format
 msgid ""
 "URL extension \"%s\" relates to format \"%s\" but a score for that format is "
 "not configured, so giving it default score %s."
 msgstr ""
 
-#: ckanext/qa/tasks.py:414
+#: ckanext/qa/tasks.py:417
 #, python-format
 msgid "URL extension \"%s\" is an unknown format."
 msgstr ""
 
-#: ckanext/qa/tasks.py:450
+#: ckanext/qa/tasks.py:453
 msgid "Format field is blank."
 msgstr ""
 
-#: ckanext/qa/tasks.py:455
+#: ckanext/qa/tasks.py:458
 #, python-format
 msgid "Format field \"%s\" does not correspond to a known format."
 msgstr ""
 
-#: ckanext/qa/tasks.py:458
+#: ckanext/qa/tasks.py:461
 #, python-format
 msgid "Format field \"%s\" receives score: %s."
 msgstr ""
