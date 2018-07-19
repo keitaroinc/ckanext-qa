@@ -7,20 +7,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-qa 2.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-07-12 11:37+0200\n"
-"PO-Revision-Date: 2018-07-12 11:40+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2018-07-18 17:42+0200\n"
+"PO-Revision-Date: 2018-07-19 11:19+0200\n"
 "Language: sq\n"
 "Language-Team: sq <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: ckanext/qa/reports.py:164
 msgid "Openness (Five Stars)"
-msgstr ""
+msgstr "Hapja (Pesë Yje)"
 
 #: ckanext/qa/reports.py:165
 msgid ""
@@ -28,149 +29,158 @@ msgid ""
 "licensed, openly accessible, structured, open format, URIs for entities, "
 "linked."
 msgstr ""
+"Setet e të dhënave klasifikohen në Tim Berners Lees 'Pesë yjet e hapjes - "
+"licencuar hapur, haptazi të arritshme, strukturuar, format të hapur, URIs "
+"për entitetet, lidhur."
 
-#: ckanext/qa/tasks.py:48
+#: ckanext/qa/tasks.py:64
 msgid "Not obtainable or license is not open"
-msgstr ""
+msgstr "Jo i arritshëm ose licenca nuk është e hapur"
 
-#: ckanext/qa/tasks.py:49
+#: ckanext/qa/tasks.py:65
 msgid "Obtainable and open license"
-msgstr ""
+msgstr "Licenca e arritshme dhe e hapur"
 
-#: ckanext/qa/tasks.py:50
+#: ckanext/qa/tasks.py:66
 msgid "Machine readable format"
-msgstr ""
+msgstr "Formati i lexueshëm i makinës"
 
-#: ckanext/qa/tasks.py:51
+#: ckanext/qa/tasks.py:67
 msgid "Open and standardized format"
-msgstr ""
+msgstr "Formati i hapur dhe i standardizuar"
 
-#: ckanext/qa/tasks.py:52
+#: ckanext/qa/tasks.py:68
 msgid "Ontologically represented"
-msgstr ""
+msgstr "Përfaqësuar ontologjikisht"
 
-#: ckanext/qa/tasks.py:53
+#: ckanext/qa/tasks.py:69
 msgid "Fully Linked Open Data as appropriate"
-msgstr ""
+msgstr "Të dhënat e hapura plotësisht të lidhura si të përshtatshme"
 
-#: ckanext/qa/tasks.py:254
+#: ckanext/qa/tasks.py:257
 msgid "Could not understand the file format, therefore score is 1."
-msgstr ""
+msgstr "Nuk mund ta kuptonin formatin e skedarit, prandaj rezultati është 1."
 
-#: ckanext/qa/tasks.py:263
+#: ckanext/qa/tasks.py:266
 #, python-format
 msgid "Unknown error: %s"
-msgstr ""
+msgstr "Gabim i panjohur: %s"
 
-#: ckanext/qa/tasks.py:277
+#: ckanext/qa/tasks.py:280
 msgid "License not open"
-msgstr ""
+msgstr "Licenca nuk është e hapur"
 
-#: ckanext/qa/tasks.py:302
+#: ckanext/qa/tasks.py:305
 msgid "File could not be downloaded."
-msgstr ""
+msgstr "Skeda nuk mund të shkarkohej."
 
-#: ckanext/qa/tasks.py:303 ckanext/qa/tasks.py:376 ckanext/qa/tasks.py:381
+#: ckanext/qa/tasks.py:306 ckanext/qa/tasks.py:379 ckanext/qa/tasks.py:384
 #: ckanext/qa/templates/qa/openness_stars.html:47
 #: ckanext/qa/templates/qa/openness_stars_brief.html:23
 #: ckanext/qa/templates/report/openness.html:88
 msgid "Reason"
-msgstr ""
+msgstr "Arsye"
 
-#: ckanext/qa/tasks.py:304
+#: ckanext/qa/tasks.py:307
 #, python-format
 msgid "Error details: %s."
-msgstr ""
+msgstr "Detajet e gabimit: %s."
 
-#: ckanext/qa/tasks.py:305
+#: ckanext/qa/tasks.py:308
 #, python-format
 msgid "Attempted on %s."
-msgstr ""
+msgstr "Përpjekur në %s."
 
-#: ckanext/qa/tasks.py:309 ckanext/qa/tasks.py:317
+#: ckanext/qa/tasks.py:312 ckanext/qa/tasks.py:320
 #, python-format
 msgid "This URL last worked on: %s."
-msgstr ""
+msgstr "Ky URL më së fundi ka punuar në: %s."
 
-#: ckanext/qa/tasks.py:311
+#: ckanext/qa/tasks.py:314
 msgid "This was the first attempt."
-msgstr ""
+msgstr "Ky ishte përpjekja e parë."
 
-#: ckanext/qa/tasks.py:313
+#: ckanext/qa/tasks.py:316
 #, python-format
 msgid "Tried %s times since %s."
-msgstr ""
+msgstr "U përpoqa që %s që prej %s."
 
-#: ckanext/qa/tasks.py:319
+#: ckanext/qa/tasks.py:322
 msgid "This URL has not worked in the history of this tool."
-msgstr ""
+msgstr "Ky URL nuk ka funksionuar në historinë e këtij mjeti."
 
-#: ckanext/qa/tasks.py:354 ckanext/qa/tasks.py:384
+#: ckanext/qa/tasks.py:357 ckanext/qa/tasks.py:387
 msgid "This file had not been downloaded at the time of scoring it."
-msgstr ""
+msgstr "Kjo skedar nuk është shkarkuar në kohën e shënimit të tij."
 
-#: ckanext/qa/tasks.py:359
+#: ckanext/qa/tasks.py:362
 #, python-format
 msgid "Cache filepath does not exist: \"%s\"."
-msgstr ""
+msgstr "Rruga e skedarit të skedarit nuk ekziston: % s\"."
 
-#: ckanext/qa/tasks.py:367
+#: ckanext/qa/tasks.py:370
 #, python-format
 msgid ""
 "Content of file appeared to be format \"%s\" which receives openness "
 "score: %s."
 msgstr ""
+"Përmbajtja e dosjes duket të jetë format \"%s\" i cili merr rezultatin e "
+"hapjes:% s."
 
-#: ckanext/qa/tasks.py:370
+#: ckanext/qa/tasks.py:373
 msgid "The format of the file was not recognized from its contents."
-msgstr ""
+msgstr "Formati i skedarit nuk u njoh nga përmbajtja e tij."
 
-#: ckanext/qa/tasks.py:375
+#: ckanext/qa/tasks.py:378
 msgid "File was not downloaded deliberately"
-msgstr ""
+msgstr "Dosja nuk u shkarkua qëllimisht"
 
-#: ckanext/qa/tasks.py:376 ckanext/qa/tasks.py:381
+#: ckanext/qa/tasks.py:379 ckanext/qa/tasks.py:384
 msgid "Using other methods to determine file openness."
-msgstr ""
+msgstr "Përdorimi i metodave të tjera për të përcaktuar hapjen e skedarëve."
 
-#: ckanext/qa/tasks.py:380
+#: ckanext/qa/tasks.py:383
 msgid "A system error occurred during downloading this file"
-msgstr ""
+msgstr "Gjatë shkarkimit të këtij skedari ndodhi një gabim në sistem"
 
-#: ckanext/qa/tasks.py:401
+#: ckanext/qa/tasks.py:404
 msgid "Could not determine a file extension in the URL."
-msgstr ""
+msgstr "Nuk mund të përcaktohej një zgjatje skedari në URL."
 
-#: ckanext/qa/tasks.py:408
+#: ckanext/qa/tasks.py:411
 #, python-format
 msgid "URL extension \"%s\" relates to format \"%s\" and receives score: %s."
 msgstr ""
+"Shtrirja e URL-ve \"%s\" lidhet me formatin \"%s\" dhe merr rezultatin: %s."
 
-#: ckanext/qa/tasks.py:412
+#: ckanext/qa/tasks.py:415
 #, python-format
 msgid ""
-"URL extension \"%s\" relates to format \"%s\" but a score for that format"
-" is not configured, so giving it default score %s."
+"URL extension \"%s\" relates to format \"%s\" but a score for that format "
+"is not configured, so giving it default score %s."
 msgstr ""
+"Shtrirja e URL-ve \"%s\" lidhet me formatin \"%s\" por një rezultat për "
+"atë format nuk është i konfiguruar, kështu që duke i dhënë asaj pikën e "
+"paracaktuar% s."
 
-#: ckanext/qa/tasks.py:414
+#: ckanext/qa/tasks.py:417
 #, python-format
 msgid "URL extension \"%s\" is an unknown format."
-msgstr ""
+msgstr "Shtrirja e URL-së \"%s\" është një format i panjohur."
 
-#: ckanext/qa/tasks.py:450
+#: ckanext/qa/tasks.py:453
 msgid "Format field is blank."
-msgstr ""
-
-#: ckanext/qa/tasks.py:455
-#, python-format
-msgid "Format field \"%s\" does not correspond to a known format."
-msgstr ""
+msgstr "Fusha Format është bosh."
 
 #: ckanext/qa/tasks.py:458
 #, python-format
+msgid "Format field \"%s\" does not correspond to a known format."
+msgstr "Fusha format \"%s\" nuk korrespondon me një format të njohur."
+
+#: ckanext/qa/tasks.py:461
+#, python-format
 msgid "Format field \"%s\" receives score: %s."
-msgstr ""
+msgstr "Fusha e formatit \"%s\" merr rezultatin: %s."
 
 #: ckanext/qa/fanstatic/javascript/modules/openness-info.js:145
 #: ckanext/qa/templates/qa/openness_stars.html:34
@@ -180,7 +190,7 @@ msgstr "Çiltërsi"
 
 #: ckanext/qa/fanstatic/javascript/modules/openness-info.js:154
 msgid "OK"
-msgstr "Ne rregull"
+msgstr "OK"
 
 #: ckanext/qa/templates/qa/openness_stars.html:39
 msgid ""
@@ -190,13 +200,15 @@ msgid ""
 "follows:"
 msgstr ""
 "Një vlerësim i nivelit të hapjes së të dhënave është dhënë në bazë të "
-"modelit të hapur të të dhënave të qeverisë, i përcaktuar përmes një sistemi "
-"me 5 yje, i krijuar nga themeluesi i internetit Tim Berners Lee. Sistemi me "
-"5 yje është si vijon:"
+"modelit të hapur të të dhënave të qeverisë, i përcaktuar përmes një "
+"sistemi me 5 yje, i krijuar nga themeluesi i internetit Tim Berners Lee. "
+"Sistemi me 5 yje është si vijon:"
 
 #: ckanext/qa/templates/qa/openness_stars.html:40
 msgid "data on the web regardless of the format, using an open license"
-msgstr "dtë dhëna në ueb pa marrë parasysh formatin, duke përdorur një licencë të hapur"
+msgstr ""
+"të dhëna në ueb pa marrë parasysh formatin, duke përdorur një licencë të "
+"hapur"
 
 #: ckanext/qa/templates/qa/openness_stars.html:41
 msgid ""
@@ -208,11 +220,13 @@ msgstr ""
 
 #: ckanext/qa/templates/qa/openness_stars.html:42
 msgid "data in a structured, open format (eg. CSV instead of Excel)"
-msgstr "të dhënat në një format të hapur të strukturuar (p.sh. CSV në vend të Excel)"
+msgstr ""
+"të dhënat në një format të hapur të strukturuar (p.sh. CSV në vend të "
+"Excel)"
 
 #: ckanext/qa/templates/qa/openness_stars.html:43
 msgid "using unique URLs to connect data sets"
-msgstr "duke përdorur URL unike për të lidhur setet e të dhënave"
+msgstr "duke përdorur URL unike për të lidhur grupet e të dhënave"
 
 #: ckanext/qa/templates/qa/openness_stars.html:44
 msgid "linking data with other data for recontext"
@@ -225,80 +239,81 @@ msgstr "Vlerësim"
 #: ckanext/qa/templates/qa/openness_stars.html:53
 #: ckanext/qa/templates/qa/openness_stars_brief.html:23
 msgid "Checked"
-msgstr ""
+msgstr "Kontrolluar"
 
 #: ckanext/qa/templates/qa/openness_stars.html:59
 #: ckanext/qa/templates/qa/openness_stars_brief.html:26
 msgid "No openness information yet."
-msgstr ""
+msgstr "Asnjë informacion i hapur ende."
 
 #: ckanext/qa/templates/qa/stars.html:25
 msgid "{0} out of {1}"
-msgstr ""
+msgstr "{0} nga {1}"
 
 #: ckanext/qa/templates/qa/stars_explained.html:7
 msgid "Linked data - data URIs and linked to other data (e.g. RDF)"
 msgstr ""
+"Të dhënat e lidhura - të dhënat URI dhe të lidhura me të dhëna të tjera (p."
+"sh. RDF)"
 
 #: ckanext/qa/templates/qa/stars_explained.html:9
 msgid "Linkable data - served at URIs (e.g. RDF)"
-msgstr ""
+msgstr "Të dhënat e lidhura - shërbyen në URI (p.sh. RDF)"
 
 #: ckanext/qa/templates/qa/stars_explained.html:11
 msgid "Structured data in open format (e.g. CSV)"
-msgstr ""
+msgstr "Të dhënat e strukturuara në format të hapur (p.sh. CSV)"
 
 #: ckanext/qa/templates/qa/stars_explained.html:13
 msgid "Structured data but proprietry format (e.g. Excel)"
-msgstr ""
+msgstr "Të dhënat e strukturuara, por formati i pronarit (i. Excel)"
 
 #: ckanext/qa/templates/qa/stars_explained.html:15
 msgid "Unstructured data (e.g. PDF)"
-msgstr ""
+msgstr "Të dhënat e pastrukturuara (p.sh. PDF)"
 
 #: ckanext/qa/templates/report/openness.html:3
 #: ckanext/qa/templates/report/openness.html:57
 msgid "Datasets given a score"
-msgstr ""
+msgstr "Setet e të dhënave kanë dhënë një rezultat"
 
 #: ckanext/qa/templates/report/openness.html:4
 #: ckanext/qa/templates/report/openness.html:58
 msgid "Score frequencies"
-msgstr ""
+msgstr "Vlerësoni frekuencën"
 
 #: ckanext/qa/templates/report/openness.html:8
 #: ckanext/qa/templates/report/openness.html:29
 #: ckanext/qa/templates/report/openness.html:62
 msgid "Score TBC"
-msgstr ""
+msgstr "Vlerësoni TBC"
 
 #: ckanext/qa/templates/report/openness.html:10
 #: ckanext/qa/templates/report/openness.html:31
 #: ckanext/qa/templates/report/openness.html:64
 #: ckanext/qa/templates/report/openness.html:87
 msgid "Score"
-msgstr ""
+msgstr "Rezultat"
 
 #: ckanext/qa/templates/report/openness.html:28
 #: ckanext/qa/templates/report/openness.html:85
 msgid "Organization"
-msgstr ""
+msgstr "Institucion"
 
 #: ckanext/qa/templates/report/openness.html:33
 #: ckanext/qa/templates/report/openness.html:56
 msgid "Total stars"
-msgstr ""
+msgstr "Yjet Gjithsej"
 
 #: ckanext/qa/templates/report/openness.html:34
 #: ckanext/qa/templates/report/openness.html:55
 msgid "Average score"
-msgstr ""
+msgstr "Rezultati mesatar"
 
 #: ckanext/qa/templates/report/openness.html:82
 msgid "Dataset"
-msgstr ""
+msgstr "Seti i të dhënave"
 
 #: ckanext/qa/templates/report/openness.html:83
 msgid "Notes"
-msgstr ""
-
+msgstr "Shënime"
