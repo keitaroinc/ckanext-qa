@@ -9,15 +9,14 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-07-18 17:42+0200\n"
 "PO-Revision-Date: 2018-07-19 11:19+0200\n"
+"Last-Translator: \n"
 "Language: sq\n"
 "Language-Team: sq <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
-"Last-Translator: \n"
-"X-Generator: Poedit 2.0.4\n"
 
 #: ckanext/qa/reports.py:164
 msgid "Openness (Five Stars)"
@@ -29,9 +28,9 @@ msgid ""
 "licensed, openly accessible, structured, open format, URIs for entities, "
 "linked."
 msgstr ""
-"Setet e të dhënave klasifikohen në Tim Berners Lees 'Pesë yjet e hapjes - "
-"licencuar hapur, haptazi të arritshme, strukturuar, format të hapur, URIs "
-"për entitetet, lidhur."
+"Setet e të dhënave klasifikohen në Tim Berners Lees 'Pesë yjet e hapjes -"
+" licencuar hapur, haptazi të arritshme, strukturuar, format të hapur, "
+"URIs për entitetet, lidhur."
 
 #: ckanext/qa/tasks.py:64
 msgid "Not obtainable or license is not open"
@@ -151,13 +150,14 @@ msgstr "Nuk mund të përcaktohej një zgjatje skedari në URL."
 #, python-format
 msgid "URL extension \"%s\" relates to format \"%s\" and receives score: %s."
 msgstr ""
-"Shtrirja e URL-ve \"%s\" lidhet me formatin \"%s\" dhe merr rezultatin: %s."
+"Shtrirja e URL-ve \"%s\" lidhet me formatin \"%s\" dhe merr rezultatin: "
+"%s."
 
 #: ckanext/qa/tasks.py:415
 #, python-format
 msgid ""
-"URL extension \"%s\" relates to format \"%s\" but a score for that format "
-"is not configured, so giving it default score %s."
+"URL extension \"%s\" relates to format \"%s\" but a score for that format"
+" is not configured, so giving it default score %s."
 msgstr ""
 "Shtrirja e URL-ve \"%s\" lidhet me formatin \"%s\" por një rezultat për "
 "atë format nuk është i konfiguruar, kështu që duke i dhënë asaj pikën e "
@@ -253,8 +253,8 @@ msgstr "{0} nga {1}"
 #: ckanext/qa/templates/qa/stars_explained.html:7
 msgid "Linked data - data URIs and linked to other data (e.g. RDF)"
 msgstr ""
-"Të dhënat e lidhura - të dhënat URI dhe të lidhura me të dhëna të tjera (p."
-"sh. RDF)"
+"Të dhënat e lidhura - të dhënat URI dhe të lidhura me të dhëna të tjera "
+"(p.sh. RDF)"
 
 #: ckanext/qa/templates/qa/stars_explained.html:9
 msgid "Linkable data - served at URIs (e.g. RDF)"
@@ -298,7 +298,7 @@ msgstr "Rezultat"
 #: ckanext/qa/templates/report/openness.html:28
 #: ckanext/qa/templates/report/openness.html:85
 msgid "Organization"
-msgstr "Institucion"
+msgstr "Organizatë"
 
 #: ckanext/qa/templates/report/openness.html:33
 #: ckanext/qa/templates/report/openness.html:56
