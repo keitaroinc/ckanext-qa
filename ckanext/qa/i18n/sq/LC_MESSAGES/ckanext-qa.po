@@ -124,7 +124,7 @@ msgid ""
 "score: %s."
 msgstr ""
 "Përmbajtja e dosjes duket të jetë format \"%s\" i cili merr rezultatin e "
-"hapjes:% s."
+"hapjes: %s."
 
 #: ckanext/qa/tasks.py:373
 msgid "The format of the file was not recognized from its contents."
