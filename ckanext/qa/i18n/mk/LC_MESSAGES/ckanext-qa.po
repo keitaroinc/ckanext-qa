@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-qa 2.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-07-18 17:42+0200\n"
+"POT-Creation-Date: 2018-08-08 12:06+0200\n"
 "PO-Revision-Date: 2018-06-09 00:37+0200\n"
 "Last-Translator: \n"
 "Language: mk\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: ckanext/qa/reports.py:164
+#: ckanext/qa/plugin.py:66
 msgid "Openness (Five Stars)"
 msgstr "Отвореност (Пет ѕвезди)"
 
-#: ckanext/qa/reports.py:165
+#: ckanext/qa/plugin.py:67
 msgid ""
 "Datasets graded on Tim Berners Lees' Five Stars of Openness - openly "
 "licensed, openly accessible, structured, open format, URIs for entities, "
@@ -308,4 +308,3 @@ msgstr "Податочен сет"
 #: ckanext/qa/templates/report/openness.html:83
 msgid "Notes"
 msgstr "Белешки"
-

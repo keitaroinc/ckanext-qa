@@ -11,7 +11,7 @@ from ckanext.qa.model import QA, aggregate_qa_for_a_dataset
 from ckanext.qa import helpers
 from ckanext.qa import lib
 from ckanext.report.interfaces import IReport
-
+from ckan.plugins import toolkit
 
 log = logging.getLogger(__name__)
 
@@ -63,6 +63,8 @@ class QAPlugin(p.SingletonPlugin, p.toolkit.DefaultDatasetForm,
 
     def register_reports(self):
         """Register details of an extension's reports"""
+        toolkit._('Openness (Five Stars)')
+        toolkit._('Datasets graded on Tim Berners Lees\' Five Stars of Openness - openly licensed, openly accessible, structured, open format, URIs for entities, linked.')
         from ckanext.qa import reports
         return [reports.openness_report_info]
 
